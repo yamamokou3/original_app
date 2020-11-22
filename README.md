@@ -22,3 +22,35 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## userテーブル
+
+| column            | Type   | Options     |
+| ----------------- | ------ | ------------|
+| name              | string | null: false |
+| self-introduction | text   |
+
+Association
+
+- has_many :tweets
+
+## tweetsテーブル
+
+| column            | Type   | Options     |
+| ----------------- | ------ | ------------|
+| photo             |
+| map               | string  | null:false  |
+| date              | integer | null: false |
+| name              | string  | null: false |
+| size              | integer |
+| weight            | integer |
+| congstion         | integer | null: false |
+| toilet            | integer | null: false |
+| fishing_shop      | integer | null: false |
+| parking           | integer | null: false |
+| memo              | text    | null: false |
+| user              | references | foreign_key: true |
+
+Association
+
+- belongs_to :user
