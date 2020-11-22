@@ -39,6 +39,7 @@ Association
 | column            | Type   | Options     |
 | ----------------- | ------ | ------------|
 | photo             |
+| map               | string  | null:false  |
 | date              | integer | null: false |
 | name              | string  | null: false |
 | size              | integer |
@@ -48,6 +49,7 @@ Association
 | fishing_shop      | integer | null: false |
 | parking           | integer | null: false |
 | memo              | text    | null: false |
+| user              | references | foreign_key: true |
 
 Association
 
